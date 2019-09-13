@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/hoodie_2"
+        android:id="@+id/hoodie_sign_up_image"
         android:layout_width="411dp"
         android:layout_height="182dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +25,7 @@
         android:textSize="48sp"
         app:fontFamily="@font/chosence"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="@id/hoodie_2"
+        app:layout_constraintBottom_toBottomOf="@id/hoodie_sign_up_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hoodie_2">
+        app:layout_constraintTop_toBottomOf="@+id/hoodie_sign_up_image">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email_text_edit"
@@ -121,23 +121,23 @@
 
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/sign_up_button"
+        android:id="@+id/login_button"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        app:fontFamily="@font/saira"
-        android:textStyle="normal"
         android:gravity="center"
         android:text="@string/sign_up"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="normal"
         app:backgroundTint="@color/yellow"
+        app:fontFamily="@font/saira"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
 
     <TextView
-        android:id="@+id/have_account_text"
+        android:id="@+id/no_account_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -149,7 +149,7 @@
         app:fontFamily="@font/saira"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/sign_up_button" />
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
     <TextView
         android:id="@+id/login_text"
@@ -164,10 +164,10 @@
         android:textSize="16sp"
         app:fontFamily="@font/saira"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/have_account_text"
+        app:layout_constraintBottom_toBottomOf="@+id/no_account_text"
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
         app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/have_account_text" />
+        app:layout_constraintStart_toEndOf="@+id/no_account_text" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

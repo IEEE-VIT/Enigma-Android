@@ -1,7 +1,6 @@
 package com.example.enigma.ui;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,7 +43,7 @@ public class SignupFragment extends Fragment {
         email = rootView.findViewById(R.id.email_text_edit);
         password = rootView.findViewById(R.id.password_text_edit);
         confirmPassword = rootView.findViewById(R.id.confirm_password_text_edit);
-        signUp = rootView.findViewById(R.id.sign_up_button);
+        signUp = rootView.findViewById(R.id.login_button);
         auth = FirebaseAuth.getInstance();
 
 
